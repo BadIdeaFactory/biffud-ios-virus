@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wI1-aC-vSH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="overpass-bold.otf">
+            <string>Overpass-Bold</string>
+        </array>
+        <array key="overpass-regular.otf">
+            <string>Overpass-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="57J-EV-5K3">
+            <objects>
+                <viewController id="wI1-aC-vSH" customClass="WebViewController" customModule="iOSVirus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hD4-KJ-RGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QU-ON-wF8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BIF Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZtR-5f-T8v">
+                                <rect key="frame" x="46" y="277" width="283" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="b88-c7-sUR"/>
+                                    <constraint firstAttribute="height" constant="132" id="nHz-EW-OUN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZtR-5f-T8v" firstAttribute="centerY" secondItem="hD4-KJ-RGF" secondAttribute="centerY" constant="9.5" id="1kH-kM-0ZQ"/>
+                            <constraint firstItem="1QU-ON-wF8" firstAttribute="top" secondItem="tVy-6y-zYO" secondAttribute="top" id="AF8-oo-ZTa"/>
+                            <constraint firstItem="ZtR-5f-T8v" firstAttribute="centerX" secondItem="hD4-KJ-RGF" secondAttribute="centerX" id="c1b-Cq-p2a"/>
+                            <constraint firstItem="tVy-6y-zYO" firstAttribute="trailing" secondItem="1QU-ON-wF8" secondAttribute="trailing" id="mye-67-Giy"/>
+                            <constraint firstItem="tVy-6y-zYO" firstAttribute="bottom" secondItem="1QU-ON-wF8" secondAttribute="bottom" id="sYT-Mp-hXc"/>
+                            <constraint firstItem="1QU-ON-wF8" firstAttribute="leading" secondItem="tVy-6y-zYO" secondAttribute="leading" id="zdW-hZ-HAI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tVy-6y-zYO"/>
+                    </view>
+                    <connections>
+                        <outlet property="bifLogo" destination="ZtR-5f-T8v" id="R5J-5A-AIe"/>
+                        <outlet property="mainWebView" destination="1QU-ON-wF8" id="g7e-3u-R61"/>
+                        <segue destination="qDp-Ge-OFc" kind="show" identifier="errorSegue" id="JX8-Qc-ChU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBD-yE-cCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Error View Controller-->
+        <scene sceneID="wSG-bK-qo8">
+            <objects>
+                <viewController id="qDp-Ge-OFc" customClass="ErrorViewController" customModule="iOSVirus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ui3-Rd-Jf9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-hQ-gar">
+                                <rect key="frame" x="24.5" y="291.5" width="326" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh... SNAP!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09o-5k-yhR">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="53.5"/>
+                                        <fontDescription key="fontDescription" name="Overpass-Bold" family="Overpass" pointSize="42"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gje-zV-s02">
+                                        <rect key="frame" x="0.0" y="53.5" width="326" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="326" id="yQu-9Y-8zy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-Ld-YEG">
+                                <rect key="frame" x="130" y="503" width="115" height="40"/>
+                                <color key="backgroundColor" name="R1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="VWs-Se-TNQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="sPt-dU-DFV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="wDD-q3-AvV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tryAgainClicked:" destination="qDp-Ge-OFc" eventType="touchUpInside" id="8Yr-uo-qBH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GvZ-hQ-gar" firstAttribute="centerX" secondItem="ui3-Rd-Jf9" secondAttribute="centerX" id="7F0-n0-ive"/>
+                            <constraint firstItem="tOv-ob-mxA" firstAttribute="bottom" secondItem="jlo-Ld-YEG" secondAttribute="bottom" constant="124" id="9tr-Vc-LKS"/>
+                            <constraint firstItem="jlo-Ld-YEG" firstAttribute="centerX" secondItem="ui3-Rd-Jf9" secondAttribute="centerX" id="CHU-69-dMr"/>
+                            <constraint firstItem="GvZ-hQ-gar" firstAttribute="centerY" secondItem="ui3-Rd-Jf9" secondAttribute="centerY" id="uCa-iB-fAz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tOv-ob-mxA"/>
+                    </view>
+                    <connections>
+                        <outlet property="tryAgainButton" destination="jlo-Ld-YEG" id="lkh-V1-4Vc"/>
+                        <segue destination="wI1-aC-vSH" kind="show" identifier="retrySegue" id="huf-kK-KhD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTI-Xc-S60" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.5999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BIF Logo" width="1037" height="414"/>
+        <namedColor name="R1">
+            <color red="0.90196078431372551" green="0.20000000000000001" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
