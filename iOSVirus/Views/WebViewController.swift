@@ -11,8 +11,17 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         mainWebView.navigationDelegate = self
         
-        let appUrl = URL(string:"https://biffud.com")
-        let appRequest = URLRequest(url: appUrl!)
+        // Option 1: A url on the real live internet
+        // let appUrl = URL(string:"https://biffud.com")
+        // let appRequest = URLRequest(url: appUrl!)
+        // mainWebView.load(appRequest)
+
+        // Option 2: A file in the Website directory
+        // To make this work, you need a folder named Website that contains your website.
+        // Add this folder using the "Add Files" feature of xcode, and be sure "Add folder references"
+        // is the selected option.
+        let appUrl = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "Website")!
+        let appRequest = URLRequest(url: appUrl)
         mainWebView.load(appRequest)
     }
     
