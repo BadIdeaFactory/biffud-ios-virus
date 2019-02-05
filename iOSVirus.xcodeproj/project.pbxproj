@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0190F7A21C9A38C00AF205B /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0190F7921C9A38C00AF205B /* RandomColor.swift */; };
+		D04E5698220A2082005CF230 /* Website in Resources */ = {isa = PBXBuildFile; fileRef = D04E5697220A2082005CF230 /* Website */; };
 		D0A2DF9B21C986FC0064D61F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2DF9A21C986FC0064D61F /* AppDelegate.swift */; };
 		D0A2DFA021C986FC0064D61F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A2DF9E21C986FC0064D61F /* Main.storyboard */; };
 		D0A2DFA221C986FD0064D61F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A2DFA121C986FD0064D61F /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		D0190F7721C99FAC00AF205B /* overpass-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overpass-bold.otf"; sourceTree = "<group>"; };
 		D0190F7821C9A01400AF205B /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		D0190F7921C9A38C00AF205B /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		D04E5697220A2082005CF230 /* Website */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Website; sourceTree = "<group>"; };
 		D0A2DF9721C986FC0064D61F /* iOSVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A2DF9A21C986FC0064D61F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0A2DF9F21C986FC0064D61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		D0A2DF9921C986FC0064D61F /* iOSVirus */ = {
 			isa = PBXGroup;
 			children = (
+				D04E5697220A2082005CF230 /* Website */,
 				D0190F7521C99EEE00AF205B /* Fonts */,
 				D0A2DFAE21C98FB20064D61F /* Views */,
 				D0A2DF9A21C986FC0064D61F /* AppDelegate.swift */,
@@ -152,6 +155,7 @@
 			files = (
 				D0A2DFA521C986FD0064D61F /* LaunchScreen.storyboard in Resources */,
 				D0A2DFA221C986FD0064D61F /* Assets.xcassets in Resources */,
+				D04E5698220A2082005CF230 /* Website in Resources */,
 				D0A2DFA021C986FC0064D61F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

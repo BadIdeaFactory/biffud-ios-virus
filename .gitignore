@@ -22,3 +22,5 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+## Ignore the website content
+Website
