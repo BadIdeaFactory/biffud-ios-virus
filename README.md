@@ -2,6 +2,10 @@
 
 This very appropriately named project is a generic iOS wrapper (bacteriphage) capable of injecting HTML (RNA) into your iOS device (host cell).
 
+Here is an architecture diagram.
+
+![architecture](https://user-images.githubusercontent.com/208884/66493299-ce0bb580-ea83-11e9-9489-d394b0622bbf.png)
+
 ## Application types
 
 There are two types of web application that can be wrapped using this tool:
