@@ -35,8 +35,8 @@ Note: `index.html` is the entry point.
 ### Pathway B: Hosted site
 To create a new iOS application that renders a hosted website (e.g. a url), do the following:
 
-1. Update `iOSVirus/Views/WebViewController.swift` by commenting L23-L25 (the lines specifying the local paths)
-2. In that same file, uncomment L15-L17 (the lines specifying the remote url)
+1. Update `iOSVirus/Views/WebViewController.swift` by commenting [L23-L25](https://github.com/BadIdeaFactory/biffud-ios-virus/blob/master/iOSVirus/Views/WebViewController.swift#L23-L25) (the lines specifying the local paths)
+2. In that same file, uncomment [L15-L17](https://github.com/BadIdeaFactory/biffud-ios-virus/blob/master/iOSVirus/Views/WebViewController.swift#L15-L17) (the lines specifying the remote url)
 3. Update `appUrl` to be whatever you are trying to host.
 
 ## Other Notes
