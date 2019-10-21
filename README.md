@@ -1,6 +1,6 @@
 # BIFFUD iOS Virus
 
-This very appropriately named project is a generic iOS wrapper (bacteriphage) capable of injecting HTML (RNA) into your iOS device (host cell).
+This very appropriately named project is a generic iOS wrapper (bacteriophage) capable of injecting HTML (RNA) into your iOS device (host cell).
 
 Here is an architecture diagram.
 
